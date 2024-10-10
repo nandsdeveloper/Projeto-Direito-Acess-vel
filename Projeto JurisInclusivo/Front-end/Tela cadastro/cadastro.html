@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JurisInclusivo - Cadastro</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .top-section {
+            background-color: #f2f2f2;
+            height: 50%;
+        }
+        .bottom-section {
+            background-color: #5D3EBD;
+            height: 50%;
+        }
+        .form-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 400px;
+            width: 90%;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+        .title-box {
+            background-color: #5D3EBD;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .btn-purple {
+            background-color: #5D3EBD;
+            color: #fff;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-section"></div>
+    <div class="bottom-section"></div>
+    <div class="form-container">
+        <div class="title-box">
+            <h1>JurisInclusivo</h1>
+        </div>
+        <h2 class="text-center text-purple mb-3">Cadastre-se</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nome completo:</label>
+                <input type="text" id="name" class="form-control" placeholder="Insira seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Número de contato:</label>
+                <input type="text" id="phone" class="form-control" placeholder="Insira seu número fixo ou celular" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" class="form-control" placeholder="Insira seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-email">Confirme seu e-mail:</label>
+                <input type="email" id="confirm-email" class="form-control" placeholder="Confirme seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" class="form-control" placeholder="Insira sua senha" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Repita sua senha:</label>
+                <input type="password" id="confirm-password" class="form-control" placeholder="Repita sua senha" required>
+            </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="terms">
+                <label class="form-check-label" for="terms">
+                    Ao clicar em cadastrar, concordo que li e aceito os <a href="#" class="text-purple">Termos de Uso</a>.
+                </label>
+            </div>
+            <button type="submit" class="btn btn-purple">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
